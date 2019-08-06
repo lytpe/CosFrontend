@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Backend/scrollList.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">Backend</a> scrollList.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/22</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/22</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div id="srcollList"&gt;
+     &lt;el-tabs v-model="activeName" type="card" @tab-click="handleClick"&gt;
+        &lt;el-tab-pane label="轮播图列表" name="first"&gt;
+          &lt;el-row&gt;
+            &lt;el-col :span="22" :offset="1"&gt;
+                &lt;el-table
+                  :data="tableData"
+                  border
+                  stripe
+                  style="width: 100%"&gt;
+                  &lt;el-table-column
+                    type="selection"
+                    width="55"&gt;
+                  &lt;/el-table-column&gt;
+                  &lt;el-table-column
+                   prop="id"
+                   label="id"
+                   v-if="false"&gt;
+                  &lt;/el-table-column&gt;
+                  &lt;el-table-column
+                    prop="imgSubmitDate"
+                    label="日期"
+                    sortable
+                    &gt;
+                  &lt;/el-table-column&gt;
+                  &lt;el-table-column
+                    prop="picName"
+                    label="轮播图名称"
+                    sortable
+                    &gt;
+                  &lt;/el-table-column&gt;
+                  &lt;el-table-column
+                    prop="imgUrl"
+                    label="轮播图图片"&gt;
+                    &lt;template   slot-scope="scope"&gt;  
+                        &lt;el-image
+                          :src="scope.row.imgUrl"
+                          &gt;
+                        &lt;/el-image&gt;          
+                    &lt;/template&gt;  
+                  &lt;/el-table-column&gt;
+                  &lt;el-table-column
+                    prop="userName"
+                    label="上传用户"
+                    &gt;
+                  &lt;/el-table-column&gt;
+                  &lt;el-table-column label="操作"&gt;
+                  &lt;template slot-scope="scope"&gt;
+                    &lt;el-button
+                      size="mini"
+                      type="danger"
+                      @click="handleDelete(scope.$index, scope.row)"&gt;删除&lt;/el-button&gt;
+                  &lt;/template&gt;
+                &lt;/el-table-column&gt;
+                &lt;/el-table&gt;
+            &lt;/el-col&gt;
+          &lt;/el-row&gt;
+          &lt;el-row&gt;
+            &lt;el-col :span="10" :offset="14"&gt;
+              &lt;el-pagination
+                background
+                layout="prev, pager, next, sizes, total" 
+                :total="Total"
+                @size-change="handleSizeChange"
+                @current-change="handleCurrent"
+                :current-page="CurrentPage"
+                :page-sizes="[10, 20, 30, 40]" :page-size="PageSize"&gt;
+              &lt;/el-pagination&gt;
+            &lt;/el-col&gt;
+          &lt;/el-row&gt;
+        &lt;/el-tab-pane&gt;
+     &lt;/el-tabs&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+export default {
+  name: 'srcollList',
+<span class="fstat-no" title="function not covered" >   data () {</span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        activeName: 'first',
+        tableData: [],
+        Total:20,
+        CurrentPage:1,
+        PageSize:10,
+      }
+    },
+<span class="fstat-no" title="function not covered" >  created:function(){</span>
+<span class="cstat-no" title="statement not covered" >     this.GetSrcList();</span>
+  },
+    methods: {
+<span class="fstat-no" title="function not covered" >      handleClick (tab,event) {</span>
+        //console.log(tab, event);
+      },
+<span class="fstat-no" title="function not covered" >      handleSizeChange(val){</span>
+<span class="cstat-no" title="statement not covered" >        this.PageSize=val;</span>
+<span class="cstat-no" title="statement not covered" >        this.GetSrcList();</span>
+      },
+<span class="fstat-no" title="function not covered" >      handleCurrent(val){</span>
+<span class="cstat-no" title="statement not covered" >        this.CurrentPage=val;</span>
+<span class="cstat-no" title="statement not covered" >        this.GetSrcList();</span>
+      },
+<span class="fstat-no" title="function not covered" >      GetSrcList(){</span>
+<span class="cstat-no" title="statement not covered" >         var vm=this;</span>
+<span class="cstat-no" title="statement not covered" >         var parmas = new URLSearchParams();</span>
+<span class="cstat-no" title="statement not covered" >         parmas.append('Index',this.aCurrentPage)</span>
+<span class="cstat-no" title="statement not covered" >         parmas.append('Size',this.aPageSize)</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >         vm.$axios.post('http://localhost:5000/ScrollPic/GetPics',parmas,{headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}})</span></span>
+        .then(function (response) {
+<span class="cstat-no" title="statement not covered" >          if(response.data.status==1){</span>
+<span class="cstat-no" title="statement not covered" >            vm.Total=response.data.total;</span>
+<span class="cstat-no" title="statement not covered" >            vm.tableData=response.data.data;</span>
+          }
+<span class="fstat-no" title="function not covered" >        })</span>
+        .catch(function (error) {
+<span class="cstat-no" title="statement not covered" >           vm.$message.error(response.data.message);</span>
+        });
+      },
+<span class="fstat-no" title="function not covered" >      handleDelete(index,row){</span>
+<span class="cstat-no" title="statement not covered" >        var vm=this;</span>
+<span class="cstat-no" title="statement not covered" >        var parmas = new URLSearchParams();</span>
+<span class="cstat-no" title="statement not covered" >        parmas.append("id",row.id);</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >         vm.$axios.post('http://localhost:5000/ScrollPic/DeletePic',parmas,{headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}})</span></span>
+        .then(function (response) {
+<span class="cstat-no" title="statement not covered" >          if(response.data.status==1){</span>
+<span class="cstat-no" title="statement not covered" >           vm.$router.go(0);</span>
+          }
+<span class="fstat-no" title="function not covered" >        })</span>
+        .catch(function (error) {
+<span class="cstat-no" title="statement not covered" >           vm.$message.error(response.data.message);</span>
+        });
+&nbsp;
+      }
+    }
+}
+&lt;/script&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jul 29 2019 14:26:29 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>
